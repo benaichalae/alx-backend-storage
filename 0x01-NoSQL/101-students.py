@@ -5,7 +5,7 @@ from pymongo import MongoClient
 
 def top_students(mongo_collection):
     """Prints all students in a collection sorted by average score"""
-    dict_ = [
+    dic_ = [
         {
             '$project': {
                 '_id': 1,
